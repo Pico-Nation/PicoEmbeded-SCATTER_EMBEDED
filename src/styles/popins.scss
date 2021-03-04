@@ -1,0 +1,118 @@
+@import "./variables";
+
+.pop-over {
+  background:$white;
+  border-radius:$radius;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2), 0 8px 25px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  max-height: calc(100vh - 40px);
+
+  @media (max-width: $breakpoint-mobile) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius:0;
+    max-height:none;
+  }
+
+  .scroller {
+    height:calc(100vh - 40px - 100px - 70px);
+    overflow-y: scroll;
+  }
+}
+
+.total-height {
+  height:100%;
+}
+
+.pop-ins {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+  .pop-in {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:$fullheight;
+    text-align:center;
+    width:100%;
+    border-left:1px solid $lightgrey;
+    border-right:1px solid $lightgrey;
+
+    @media (max-width: $breakpoint-mobile) {
+        overflow-y:auto;
+        overflow-x: hidden;
+        height:calc(100vh - 70px);
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:70px;
+        padding:40px 20px;
+    }
+
+    .icon {
+      width:120px;
+      height:120px;
+      margin:0 auto;
+      margin-bottom:30px;
+      margin-top:-50px;
+
+      @media (max-width: $breakpoint-mobile) {
+          margin-top:0px;
+      }
+
+      &.font {
+        width:90px;
+        height:90px;
+        font-size: 48px;
+        box-shadow:0 1px 2px $blue-shadow, 0 8px 20px $blue-shadow;
+        border-radius:50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:$blue;
+        margin-bottom:20px;
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom:10px;
+    }
+
+    .subtitle {
+      font-size: $small;
+      color:$silver;
+    }
+
+    .disclaimer {
+      border:1px solid lighten($red,35%);
+      background-color:lighten($red,45%);
+      padding:20px;
+      border-radius:$radius;
+      max-width:300px;
+      margin:0 auto;
+      margin-top:40px;
+
+      .title {
+        font-size: $font-size-medium;
+        color:$red;
+      }
+
+      .description {
+        font-size: $font-size-standard;
+      }
+    }
+
+  }
+
+}
