@@ -14,7 +14,7 @@ import {Popup} from "../../models/popups/Popup";
 import Account from "@walletpack/core/models/Account";
 
 //issue here 
-import ecc from 'file://../node_modules/picojs-ecc';
+import ecc from 'picojs-ec';
 
 
 import StoreService from "@walletpack/core/services/utility/StoreService";

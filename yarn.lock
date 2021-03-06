@@ -8123,9 +8123,24 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-picojs-ecc@^1.0.0, picojs-ecc@^4.0.7:
+picojs-ec@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/picojs-ecc/-/picojs-ecc-1.0.0.tgz#a1c6334f75515d3cdac42ea226fa603a6dc0e6ca"
+  resolved "https://registry.yarnpkg.com/picojs-ec/-/picojs-ec-1.0.0.tgz#a3b5bbfe0165cfa83df40dd77e4e4eebe27ae837"
+  integrity sha512-DgbzNkShK13ffNp8VmgkYss/cy0iHHXQCo59zvao40HtS070/Ien/GW5KmGzbRmJvw8cWQKdKYILli4xIuPRzw==
+  dependencies:
+    "@babel/runtime" "7.6.0"
+    bigi "1.4.2"
+    browserify-aes "1.0.6"
+    bs58 "4.0.1"
+    bytebuffer "5.0.1"
+    create-hash "1.1.3"
+    create-hmac "1.1.6"
+    ecurve "1.0.5"
+    randombytes "2.0.5"
+
+picojs-ec@^4.0.7:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/picojs-ec/-/picojs-ec-1.0.0.tgz#a1c6334f75515d3cdac42ea226fa603a6dc0e6ca"
   integrity sha512-mpw5A1+PzW1n6pE0UD/11UdMObayyUgoDKcTVdQMD+G25ryXEDC01flGbizXicHDSa3CU9i1KGfmFMhEO3YL+g==
   dependencies:
     "@babel/runtime" "7.6.0"
@@ -10802,6 +10817,18 @@ w3c-xmlserializer@^1.0.1:
     webidl-conversions "^4.0.2"
     xml-name-validator "^3.0.0"
 
+walletpack-pico-core@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/walletpack-pico-core/-/walletpack-pico-core-1.0.0.tgz#ae060bcc37d585b641ffdddcdb1f9b98d8919fd7"
+  integrity sha512-Pk4fsKmiYGQQ0Of/TCnX330aZ4R+cW7t8zZqhKRKILVHsSKi3W+rXLhlzJFF6/auaOorovaZgd4l8nDKNKd3MA==
+  dependencies:
+    aes-oop "^1.0.4"
+    bignumber.js "^9.0.0"
+    bip39 "^2.6.0"
+    picojs-ec "^1.0.0"
+    qrcode "^1.4.1"
+    scrypt-async "^2.0.1"
+
 walletpack-picoio@^0.0.67:
   version "0.0.67"
   resolved "https://registry.yarnpkg.com/walletpack-picoio/-/walletpack-picoio-0.0.67.tgz#d8dc45fb7d7b6afa33330e5184dc01adabe8847c"
@@ -10809,7 +10836,7 @@ walletpack-picoio@^0.0.67:
   dependencies:
     "@walletpack/core" "^1.0.51"
     picojs "^21.0.3"
-    picojs-ecc "^4.0.7"
+    picojs-ec "^4.0.7"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"

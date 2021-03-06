@@ -1,5 +1,5 @@
 const fs = require('fs');
-const ecc = require('picojs-ecc');
+const ecc = require('picojs-ec');
 require('dotenv').config();
 
 if(!fs.existsSync('./dist')) return;

@@ -1,6 +1,6 @@
 import {Popup, PopupData, PopupDisplayTypes} from "../models/popups/Popup";
 import WindowService from "../services/wallets/WindowService";
-import WalletPack from "@walletpack/core";
+import WalletPack from "walletpack-pico-core";
 import {store} from "../store/store";
 import ExternalWallet, {ExternalWalletInterface} from "@walletpack/core/models/hardware/ExternalWallet";
 import SocketService from "../services/wallets/SocketService";

@@ -1,6 +1,6 @@
-import IdGenerator from "@walletpack/core/util/IdGenerator";
-import * as CoreSocketService from "@walletpack/core/services/utility/SocketService";
-import ApiService from "@walletpack/core/services/apis/ApiService";
+import IdGenerator from "walletpack-pico-core/util/IdGenerator";
+import * as CoreSocketService from "walletpack-pico-core/services/utility/SocketService";
+import ApiService from "walletpack-pico-core/services/apis/ApiService";
 import * as UIActions from "../store/ui_actions";
 import {store} from "../store/store";
 import {AES} from "aes-oop";
@@ -110,7 +110,7 @@ export default class WalletTalk {
 			};
 
 			// Just because doing sha256 on a buffer in react is dumb.
-			const ecc = require('picojs-ecc');
+			const ecc = require('picojs-ec');
 			window.ReactNativeWebView.sha256 = ({id, data}) => {
 				parseIfNeeded(data);
 				window.ReactNativeWebView.postMessage(JSON.stringify({type:'mobile_response', id, result:ecc.sha256(Buffer.from(data))}));

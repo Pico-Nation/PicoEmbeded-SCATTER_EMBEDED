@@ -2,7 +2,7 @@ require('dotenv').config();
 const packageJson = require('../package');
 const fs = require('fs');
 const archiver = require('archiver');
-const ecc = require('picojs-ecc');
+const ecc = require('picojs-ec');
 const readline = require("readline");
 
 
