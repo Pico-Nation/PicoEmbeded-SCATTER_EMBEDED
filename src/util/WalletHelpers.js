@@ -57,7 +57,7 @@ export default class WalletHelpers {
 					BTC:'btc',
 				},
 				plugins:[
-					require('@walletpack/picoio').default,
+					require('walletpack-picoio').default,
 					require('@walletpack/ethereum').default,
 					require('@walletpack/tron').default,
 					require('@walletpack/bitcoin').default,

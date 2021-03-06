@@ -30,7 +30,10 @@ import WalletTalk from "./util/WalletTalk";
 import * as Actions from "@walletpack/core/store/constants";
 import {store} from "./store/store";
 
-import '@fortawesome/fontawesome-pro/css/all.css'
+//issue changed to free 
+import '@fortawesome/fontawesome-free/css/all.css'
+
+
 import SingletonService from "./services/utility/SingletonService";
 import IdGenerator from '@walletpack/core/util/IdGenerator';
 

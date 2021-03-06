@@ -12,8 +12,13 @@ import AccountService from "@walletpack/core/services/blockchain/AccountService"
 import PopupService from "../../services/utility/PopupService";
 import {Popup} from "../../models/popups/Popup";
 import Account from "@walletpack/core/models/Account";
-import ecc from 'picojs-ecc';
+
+//issue here 
+import ecc from 'file://../node_modules/picojs-ecc';
+
+
 import StoreService from "@walletpack/core/services/utility/StoreService";
+
 
 export const RIDL_API = `https://api.ridl.network/v1`;
 
