@@ -3875,9 +3875,9 @@ electron-download@^4.1.0:
     sumchecker "^2.0.2"
 
 electron-to-chromium@^1.3.649:
-  version "1.3.681"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.681.tgz#facd915ae46a020e8be566a2ecdc0b9444439be9"
-  integrity sha512-W6uYvSUTHuyX2DZklIESAqx57jfmGjUkd7Z3RWqLdj9Mmt39ylhBuvFXlskQnvBHj0MYXIeQI+mjiwVddZLSvA==
+  version "1.3.682"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.682.tgz#f4b5c8d4479df96b61e508a721d6c32c1262ef23"
+  integrity sha512-zok2y37qR00U14uM6qBz/3iIjWHom2eRfC2S1StA0RslP7x34jX+j4mxv80t8OEOHLJPVG54ZPeaFxEI7gPrwg==
 
 elliptic@6.5.3:
   version "6.5.3"
@@ -7415,9 +7415,9 @@ no-case@^2.2.0:
     lower-case "^1.1.1"
 
 node-abi@^2.7.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.20.0.tgz#0659ee1a4a04dacabd3ac4429fac6297ed58e92e"
-  integrity sha512-6ldtfVR5l3RS8D0aT+lj/uM2Vv/PGEkeWzt2tl8DFBsGY/IuVnAIHl+dG6C14NlWClVv7Rn2+ZDvox+35Hx2Kg==
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.21.0.tgz#c2dc9ebad6f4f53d6ea9b531e7b8faad81041d48"
+  integrity sha512-smhrivuPqEM3H5LmnY3KU6HfYv0u4QklgAxfFyRNujKUzbUcYZ+Jc2EhukB9SRcD2VpqhxM7n/MIcp1Ua1/JMg==
   dependencies:
     semver "^5.4.1"
 
@@ -8138,9 +8138,9 @@ picojs-ec@^1.0.0:
     ecurve "1.0.5"
     randombytes "2.0.5"
 
-picojs-ec@^4.0.7:
+picojs-ecc@^4.0.7:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/picojs-ec/-/picojs-ec-1.0.0.tgz#a1c6334f75515d3cdac42ea226fa603a6dc0e6ca"
+  resolved "https://registry.yarnpkg.com/picojs-ecc/-/picojs-ecc-1.0.0.tgz#a1c6334f75515d3cdac42ea226fa603a6dc0e6ca"
   integrity sha512-mpw5A1+PzW1n6pE0UD/11UdMObayyUgoDKcTVdQMD+G25ryXEDC01flGbizXicHDSa3CU9i1KGfmFMhEO3YL+g==
   dependencies:
     "@babel/runtime" "7.6.0"
@@ -10644,9 +10644,9 @@ v-tooltip@^2.0.0-rc.33:
     vue-resize "^1.0.0"
 
 v8-compile-cache@^2.1.1:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.2.0.tgz#9471efa3ef9128d2f7c6a7ca39c4dd6b5055b132"
-  integrity sha512-gTpR5XQNKFwOd4clxfnhaqvfqMpqEwr4tOtCyz4MtYZX2JYhfr1JvBFKdS+7K/9rfpZR3VLX+YWBbKoxCgS43Q==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
+  integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
@@ -10836,7 +10836,7 @@ walletpack-picoio@^0.0.67:
   dependencies:
     "@walletpack/core" "^1.0.51"
     picojs "^21.0.3"
-    picojs-ec "^4.0.7"
+    picojs-ecc "^4.0.7"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"

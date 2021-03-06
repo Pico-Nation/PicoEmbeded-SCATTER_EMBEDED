@@ -19,7 +19,7 @@
     "start": "npm run dev",
     "testfile": "mocha --require test/babel --exit --timeout 1000000",
     "test": "npm run testfile \"test/**/*.spec.js\" --timeout 1000000",
-    "walletpack": "yarn add @walletpack/core walletpack-picoio @walletpack/bitcoin @walletpack/tron @walletpack/ethereum",
+    "walletpack": "yarn add walletpack-pico-core walletpack-picoio @walletpack/bitcoin @walletpack/tron @walletpack/ethereum",
     "langs": "node src/localization/check.js"
   },
   "dependencies": {
